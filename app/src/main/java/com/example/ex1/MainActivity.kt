@@ -137,7 +137,6 @@ class MainActivity : AppCompatActivity() {
 
         carCol = 1
         main_IMG_car.visibility = View.VISIBLE
-        // שימוש ב-post כדי לוודא שהמידות חושבו לפני המיקום
         main_IMG_car.post {
             setViewPosition(main_IMG_car, carCol, carRow)
         }
@@ -189,12 +188,12 @@ class MainActivity : AppCompatActivity() {
     private fun updateGame() {
         ticks++
 
-        // 1. הזזת אבנים
+       
         for (i in obstacleViews.indices) {
             if (rockRows[i] != -1) {
                 rockRows[i]++
 
-                // הסלע יוצא מהמשחק אם עבר את שורה 3
+         
                 if (rockRows[i] > 3) {
                     rockRows[i] = -1
                     obstacleViews[i].visibility = View.INVISIBLE
@@ -203,13 +202,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
-        // 2. יצירת אבנים חדשות
         if (Random.nextInt(0, 10) > 2) {
             spawnRock()
         }
-
-        // 3. בדיקת התנגשות
         checkCollisions()
     }
 
