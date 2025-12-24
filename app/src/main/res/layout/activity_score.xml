@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top 10 High Scores"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#DDDDDD"/>
+
+    <FrameLayout
+        android:id="@+id/score_FRAME_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:id="@+id/score_FRAME_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:id="@+id/score_BTN_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BACK TO MENU"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="#607D8B"/>
+
+</LinearLayout>

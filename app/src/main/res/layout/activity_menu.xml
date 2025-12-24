@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/img_background"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RACING GAME"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        android:textColor="#FFFF"/>
+
+    <Button
+        android:id="@+id/menu_BTN_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Game (Buttons)"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/menu_BTN_sensors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Game (Sensors)"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/menu_BTN_scores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top 10 Scores"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:backgroundTint="#4CAF50"/>
+
+
+</LinearLayout>

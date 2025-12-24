@@ -7,14 +7,25 @@
     android:background="@drawable/img_background"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/main_BTN_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:textSize="12sp"
+        android:backgroundTint="#FF0000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"/>
+
     <LinearLayout
         android:id="@+id/main_LL_hearts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal">
         <ImageView android:id="@+id/main_IMG_heart1" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_heart" android:layout_margin="4dp"/>
         <ImageView android:id="@+id/main_IMG_heart2" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_heart" android:layout_margin="4dp"/>
@@ -29,7 +40,9 @@
         android:layout_marginTop="50dp"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:text="000"
+        android:elevation="10dp"/>
 
     <Button
         android:id="@+id/main_BTN_start"
@@ -55,8 +68,13 @@
     <ImageView android:id="@+id/main_IMG_rock5" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_rock" android:visibility="invisible" />
     <ImageView android:id="@+id/main_IMG_rock6" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_rock" android:visibility="invisible" />
 
+    <ImageView android:id="@+id/main_IMG_coin1" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_coin" android:visibility="invisible" />
+    <ImageView android:id="@+id/main_IMG_coin2" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_coin" android:visibility="invisible" />
+    <ImageView android:id="@+id/main_IMG_coin3" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_coin" android:visibility="invisible" />
+    <ImageView android:id="@+id/main_IMG_coin4" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_coin" android:visibility="invisible" />
 
-    <ImageButton android:id="@+id/main_BTN_left" android:layout_width="60dp" android:layout_height="60dp" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_marginLeft="30dp" android:layout_marginBottom="30dp" android:background="@drawable/ic_arrow_left" />
-    <ImageButton android:id="@+id/main_BTN_right" android:layout_width="60dp" android:layout_height="60dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_marginRight="30dp" android:layout_marginBottom="30dp" android:background="@drawable/ic_arrow_right" />
+
+    <ImageButton android:id="@+id/main_BTN_left" android:layout_width="60dp" android:layout_height="60dp" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_marginStart="30dp" android:layout_marginBottom="30dp" android:background="@drawable/ic_arrow_left" />
+    <ImageButton android:id="@+id/main_BTN_right" android:layout_width="60dp" android:layout_height="60dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:layout_marginEnd="30dp" android:layout_marginBottom="30dp" android:background="@drawable/ic_arrow_right" />
 
 </RelativeLayout>
